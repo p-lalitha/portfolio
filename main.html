@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="styleMain.css">
+    <title>Lalitha portfolio</title>
+  </head>
+  <body>
+      <div class="left-div" id="showOnClick">
+        <button class="hideIcon" onclick="secondFunction()">&#9747;</button>
+        <div class="myImageClass">
+          <img class="myImage" src="frameCraft.jpg" alt="">
+        </div>
+        <div class="navbar">
+          <ul class="navbarList">
+            <li class="navbarListItem"><a class="navbarLink" href="#nameClassId">ABOUT</a></li>
+            <li class="navbarListItem"><a class="navbarLink" href="#skillsId">SKILLS</a></li>
+            <li class="navbarListItem"><a class="navbarLink" href="#educationID">EDUCATION</a></li>
+            <li class="navbarListItem"><a class="navbarLink" href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="right-div">
+      <div class="nameClass" id="nameClassId">
+        <button class="dropdownIcon" onclick="myFunction()">&#9776;</button>
+        <h1 class="h1Class">Hi!</h1>
+        <h1 class="h1Class"> I am </h1>
+        <h1 class="h1Class">Lalitha Perumalla</h1>
+      </div>
+      <div class="skillsDiv" id="skillsId">
+        <h3>MY SKILLS</h3>
+        <p class="pSkills">
+          I have relevant skills in Oracle database administration and Web Development and are listed below.
+        </p>
+      </div>
+      <div class="skillsList">
+        <pre> </pre>
+        <div class="allSkills">
+          <label class="skillsLabel">Oracle Administration</label>
+          <progress class="skillsProgress" value="50" max="100" data-label="50%"></progress>
+        </div>
+        <div class="allSkills">
+          <label class="skillsLabel">Python</label>
+          <progress class="skillsProgress" value="75" max="100" data-label="75%"></progress>
+        </div>
+        <div class="allSkills">
+          <label class="skillsLabel">HTML and CSS</label>
+          <progress class="skillsProgress" value="73" max="100" data-label="73%"></progress>
+        </div>
+        <div class="allSkills">
+          <label class="skillsLabel">SQL</label>
+          <progress class="skillsProgress" value="70" max="100" data-label="70%"></progress>
+        </div>
+        <pre> </pre>
+      </div>
+      <div class="skillsDiv">
+        <h3>PROJECTS</h3>
+        <p class="pSkills">
+          HERE ARE SOME OF MY PERSONAL PROJECTS WITH SOURCE CODE AND DEMO.
+        </p>
+      </div>
+      <div class="allProjects">
+        <div class="projects">
+          <h3>WEATHER-APP</h3>
+          <p>
+            An application which displays weather data by entering city name and country name.
+          </p>
+          <a class="projectAnchor" href="#">view source</a>
+          <br>
+          <a class="projectAnchor" href="#">visit site</a>
+        </div>
+        <div class="projects">
+          <h3>COUNTER-APP OF CARDS</h3>
+          <p>
+            It is a ReactJS application which displays cards where you can add or remove the cards using buttons.
+          </p>
+          <a class="projectAnchor" href="#">view source</a>
+          <br>
+          <a class="projectAnchor" href="#">visit site</a>
+        </div>
+        <div class="projects">
+          <h3>QUIZ APP</h3>
+          <p>
+            It is a quiz app built using Vue JS which fetches 10 random questions from an api
+          </p>
+          <a class="projectAnchor" href="#">view source</a>
+          <br>
+          <a class="projectAnchor" href="#">visit site</a>
+        </div>
+      </div>
+      <div class="skillsDiv">
+        <div class="qwerty">
+        </div>
+        <h3 class="eduh3" id="educationID">EDUCATION</h3>
+        <div class="education" id ="degreeId" onclick="expanddegree()">
+          <div class="eduleft">
+            <p>BACHELOR DEGREE</p>
+          </div>
+          <div class="eduplus" >
+            <p id="degreePlus">+</p>
+          </div>
+        </div>
+        <div class="eduDesc" id = "degreeDescId">
+          <p> Bachelor of Engineering in BVRIT college.</p>
+          <p> Have a First Class Degree with 78% </p>
+        </div>
+
+        <div class="education" id ="interId" onclick="expandinter()">
+          <div class="eduleft">
+            <p>INTERMEDIATE EDUCATION</p>
+          </div>
+          <div class="eduplus" >
+            <p id="interPlus">+</p>
+          </div>
+        </div>
+        <div class="eduDesc" id = "interDescId">
+          <p class="">Intermediate in MPC Stream in Sri Chaitanya Junior College with 94.9%.</p>
+        </div>
+
+        <div class="education" id ="schlId" onclick="expandschl()">
+          <div class="eduleft">
+            <p>HIGH SCHOOL SECONDARY EDUCATION</p>
+          </div>
+          <div class="eduplus">
+            <p id="schlPlus">+</p>
+          </div>
+        </div>
+        <div class="eduDesc" id = "schlDescId">
+          <p>Finished schooling in SSNV high School with 8.7 CGPA</p>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("showOnClick");
+      x.style.display = "none"
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+    }
+    function secondFunction(){
+      var x = document.getElementById("showOnClick");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+    }
+    var x = document.getElementById("degreeDescId");
+    x.style.display = "none"
+    var y = document.getElementById("interDescId");
+    y.style.display = "none"
+    var z = document.getElementById("schlDescId");
+    z.style.display = "none"
+    function expanddegree() {
+      var x = document.getElementById("degreeDescId");
+      if (x.style.display === "none") {
+        document.getElementById("degreeId").style.backgroundColor = "rgb(44,152,250)";
+        document.getElementById("degreeId").style.color = "white";
+        document.getElementById("degreePlus").innerHTML = "-";
+        x.style.display = "block";
+      }
+      else {
+        document.getElementById("degreeId").style.backgroundColor = "rgb(245, 238, 237)";
+        document.getElementById("degreeId").style.color = "black";
+        document.getElementById("degreePlus").innerHTML = "+";
+        x.style.display = "none";
+      }
+    }
+    function expandinter() {
+      var x = document.getElementById("interDescId");
+      if (x.style.display === "none") {
+        document.getElementById("interId").style.backgroundColor = "rgb(44,152,250)";
+        document.getElementById("interId").style.color = "white";
+        document.getElementById("interPlus").innerHTML = "-";
+        x.style.display = "block";
+      }
+      else {
+        document.getElementById("interId").style.backgroundColor = "rgb(245, 238, 237)";
+        document.getElementById("interId").style.color = "black";
+        document.getElementById("interPlus").innerHTML = "+";
+        x.style.display = "none";
+      }
+    }
+    function expandschl() {
+      var x = document.getElementById("schlDescId");
+      if (x.style.display === "none") {
+        document.getElementById("schlId").style.backgroundColor = "rgb(44,152,250)";
+        document.getElementById("schlId").style.color = "white";
+        document.getElementById("schlPlus").innerHTML = "-";
+        x.style.display = "block";
+      }
+      else {
+        document.getElementById("schlId").style.backgroundColor = "rgb(245, 238, 237)";
+        document.getElementById("schlId").style.color = "black";
+        document.getElementById("schlPlus").innerHTML = "+";
+        x.style.display = "none";
+      }
+    }
+    </script>
+  </body>
+</html>

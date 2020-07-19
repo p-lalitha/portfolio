@@ -1,0 +1,236 @@
+
+body{
+  margin-left: 8%;
+  margin-right: 8%;
+  font-family: sans-serif;
+  top: 0;
+}
+
+
+.left-div{
+  display: block;
+  width: 20%;
+  box-sizing: border-box;
+  float: left;
+  position: fixed;
+  height: 100%;
+  background-color: rgb(245, 238, 237);
+  padding: 1rem;
+}
+
+.dropdownIcon, .hideIcon{
+  display: none;
+}
+
+.right-div{
+  display: block;
+  width: 76%;
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+}
+
+.myImageClass{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.myImage{
+  margin: auto;
+  border-radius: 50%;
+  width:80%;
+  display: block;
+}
+
+.navbarList{
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+
+.navbarLink{
+  text-decoration: none;
+  }
+
+.navbarLink:hover{
+  text-decoration: underline;
+}
+
+.navbarListItem{
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nameClass{
+  width: 100%;
+  background-image: url("nameBackground.jpg");
+  background-size: cover;
+}
+
+.h1Class{
+  padding-left: 1rem;
+  margin: 0;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.skillsDiv{
+  padding-left: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: auto;
+  float: none;
+}
+
+.pSkills{
+  color: rgb(89, 89, 89);
+}
+
+.skillsList{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-left: 2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.allSkills{
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  padding: 1rem;
+}
+
+.skillsLabel{
+  width: 100%;
+}
+
+.skillsProgress{
+
+  width: 100%;
+  background-color: white;
+  border-radius: 16px%;
+}
+
+.skillsProgress::before {
+  content: attr(data-label);
+  font-size: 0.8em;
+}
+
+.allProjects{
+  width: 100%;
+  height: 500px;
+  padding-left: 1rem;
+}
+
+.projects{
+  box-sizing: border-box;
+  width: 28%;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  height: 450px;
+  box-shadow: 0 0 18px #888888;
+  text-align: center;
+}
+
+.projectAnchor{
+  background-color: rgb(245, 238, 237);
+  color: blue;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  margin: 1rem;
+  display: inline-block;
+}
+/*
+.eduh3{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+*/
+.education{
+  background-color: rgb(245, 238, 237);
+  padding: 3px;
+  margin: 3px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.eduDesc{
+  border: 1px solid rgb(245, 238, 237);
+  padding: 5px;
+  margin: 3px;
+  display: none;
+}
+
+.eduleft{
+  width: 80%;
+  float: left;
+  box-sizing: border-box;
+}
+.eduplus{
+  width: 20%;
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+  box-sizing: border-box;
+  /*display: inline-block;
+  float: right;
+  padding-right: 10px;*/
+}
+
+#degreePlus{
+}
+
+@media (max-width:705px)  {
+  .left-div{
+    display: none;
+  }
+
+  .left-div{
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .right-div{
+    width: 100%;
+  }
+
+  .dropdownIcon{
+    display: block;
+    float: left;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+.hideIcon{
+  display: block;
+  float: right;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/*
+  div.left-div-responsive{
+    position: relative;
+    display: block;
+    width: 100%;
+    float: none;
+  }
+*/
+  .allSkills{
+    width: 100%;
+  }
+
+  .projects{
+    width: 100%;
+  }
+}
